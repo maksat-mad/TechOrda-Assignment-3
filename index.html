@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Регистрация</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="/assignment-3/styles/styles.css"/>
+    <link rel="stylesheet" href="/assignment-3/styles/input.css"/>
+</head>
+<body>
+<nav>
+    <a href="/assignment-3/index.html" aria-current="page">Регистрация</a>
+    <a href="/assignment-3/login/login.html">Логин</a>
+</nav>
+<main>
+    <div class="container">
+        <h1>Регистрация</h1>
+    </div>
+    <div class="container">
+        <form action="/assignment-3/login/login.html">
+            <label for="fname">Имя:</label><br/>
+            <input type="text" id="fname" name="fname" required/><br/>
+            <label for="lname">Фамилия:</label><br/>
+            <input type="text" id="lname" name="lname" required/><br/>
+            <label for="tel">Телефон:</label><br/>
+            <input type="tel" id="tel" name="tel" required/><br/>
+            <fieldset>
+                <legend>Пол</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male"/>
+                    <label for="male">мужчина</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label for="female">женщина</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Интересы</legend>
+                <div>
+                    <input
+                            type="checkbox"
+                            id="coding"
+                            name="interest"
+                            value="coding"
+                    />
+                    <label for="coding">Кодинг</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interest" value="music"/>
+                    <label for="music">Музыка</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="film" name="interest" value="anime"/>
+                    <label for="film">Кино</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <div>
+                    <input type="date" id="date" name="date" value="date"/>
+                </div>
+            </fieldset>
+            <label for="email">Почта:</label><br/>
+            <input type="email" id="email" name="email" required/><br/>
+            <label for="password">Пароль:</label><br/>
+            <input type="password" id="password" name="password" required/><br/>
+            <div style="display: flex; justify-content: center; margin-bottom: 15rem">
+                <button type="submit">зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

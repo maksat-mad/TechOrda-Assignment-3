@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Наши работы</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="/assignment-3/styles/styles.css"/>
+    <link rel="stylesheet" href="/assignment-3/styles/ourwork.css"/>
+</head>
+<body>
+<header id="myHeader">
+    <h3>Купите сейчас и сэкономьте $100</h3>
+</header>
+<nav>
+    <a href="/assignment-3/content/main.html">Главная страница</a>
+    <a href="/assignment-3/content/aboutus.html">О нас</a>
+    <a href="/assignment-3/content/ourwork.html" aria-current="page" style="color: darkgreen">Наши работы</a>
+    <a href="/assignment-3/login/login.html" style="color: red">Выход</a>
+</nav>
+<main>
+    <div class="left-side">
+        <div class="card">
+            <h2>О наших работах</h2>
+            <p>Мы предоставляем свои услуги в 30 разных странах мира</p>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="/assets/tech.jpg" alt="technology">
+            </div>
+            <div class="sale-bottom">
+                Со скидкой 20%
+            </div>
+        </div>
+        <div class="card">
+            <h3>Успейте купить <span style="font-size: 2rem">&#128521;</span></h3>
+            <p>Действителен в течение <b style="color:crimson">60 дней</b></p>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="/assets/tech2.jpg" alt="technology">
+            </div>
+            <div class="sale-top">
+                Со скидкой 15%
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="right-side">
+        <div class="card">
+            <h2>Установка солнечных батарей</h2>
+            <h5>У нас более 5 лет опыта</h5>
+            <div class="image">
+                <img src="/assets/solar-panels.jpg" alt="solar panel image">
+            </div>
+            <p>Солнечные батареи монтаж</p>
+            <p>Солнечные батареи следует размещать в наиболее освещенном месте. Позаботьтесь о том, чтобы соседние
+                здания или деревья их не затеняли. Наиболее оптимальными местами для установки являются крыши и стены
+                зданий.</p>
+        </div>
+        <div class="card">
+            <h2>Установка ветряной турбины</h2>
+            <h5>У нас более 10 лет опыта</h5>
+            <div class="image">
+                <img src="/assets/wind_turbine.jpg" alt="wind turbine image">
+            </div>
+            <p>Ветряная турбина</p>
+            <p>Устройство для преобразования кинетической энергии ветрового потока в механическую энергию вращения
+                ротора с последующим её преобразованием в электрическую энергию.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <h3>Астана, Казахстан</h3>
+</footer>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>
